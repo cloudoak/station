@@ -1,0 +1,299 @@
+/**
+ * Created by OAK on 2016/10/12.
+ */
+body {
+	background-image: url('/resources/images/login.jpg');
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+body, h1, div, input {
+    font-family:"微软雅黑",Georgia, "Times New Roman", Times, serif;
+    font-size:15px;
+}
+
+.loginskin{
+	width:600px;
+	height:800px;
+	margin: 50px auto;
+	background:rgba(0, 102, 205, 0.3);
+	text-align:center;
+}
+
+.loginskin .title{
+	 color:#FFFFFF;
+	 font-family:"黑体";
+	 font-size:45px;
+	 font-weight:bold;
+	 margin:50px auto;
+	 width:596px;
+}
+
+.loginskin .messageBox{
+	width: 150px;
+	height:50px;
+	margin: 50px auto;
+	text-align:center;
+}
+
+.loginskin .separator{
+	 margin: 150px auto;
+}
+
+.loginskin .labelSkin{
+	 text-align:left;
+	 color:#FFFFFF;
+	 font-size:30px;
+	 margin: 50px 150px 0px 150px;
+	 border-bottom:#fff 1px solid;
+}
+
+.loginskin .labelSkin .inputSkin {
+	 margin: 0px 0px 0px 5px;
+	 text-align: left;
+	 border:rgba(0, 102, 205, 0);
+	 background:rgba(0, 102, 205, 0);
+     border-radius: 0;
+     color: #aaa;
+     font-weight: bold;
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     -webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.loginskin .labelSkin .inputSkin:focus {
+	outline: none;
+}
+
+/* Hoshi */
+.loginskin .input {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	margin: 1em;
+	max-width: 400px;
+	width: calc(100% - 2em);
+	vertical-align: top;
+}
+
+.loginskin .input__field {
+	position: relative;
+	display: block;
+	float: right;
+	padding: 0.8em;
+	width: 60%;
+	border: none;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #aaa;
+	font-weight: bold;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.loginskin .input__field:focus {
+	outline: none;
+}
+
+.loginskin .input__label {
+	display: inline-block;
+	float: right;
+	padding: 0 1em;
+	width: 40%;
+	color: #6a7989;
+	font-weight: bold;
+	font-size: 70.25%;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.loginskin .input--hoshi {
+	overflow: hidden;
+}
+
+.loginskin .input__field--hoshi {
+	margin-top: 1em;
+	padding: 0.85em 0.15em;
+	width: 100%;
+	background: transparent;
+	color: #595F6E;
+}
+
+.loginskin .input__label--hoshi {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0 0.25em;
+	width: 100%;
+	height: calc(100% - 1em);
+	text-align: left;
+	pointer-events: none;
+}
+
+.loginskin .input__label-content--hoshi {
+	position: absolute;
+}
+
+.loginskin .input__label--hoshi::before,
+.loginskin .input__label--hoshi::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100% - 10px);
+	border-bottom: 1px solid #B9C1CA;
+}
+
+.loginskin .input__label--hoshi::after {
+	margin-top: 2px;
+	border-bottom: 4px solid red;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.loginskin .input__label--hoshi-color-1::after {
+	border-color: hsl(200, 100%, 50%);
+}
+
+.loginskin .input__label--hoshi-color-2::after {
+	border-color: hsl(160, 100%, 50%);
+}
+
+.loginskin .input__label--hoshi-color-3::after {
+	border-color: hsl(20, 100%, 50%);
+}
+
+.loginskin .input__field--hoshi:focus + .input__label--hoshi::after,
+.loginskin .input--filled .input__label--hoshi::after {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.loginskin .input__field--hoshi:focus + .input__label--hoshi .input__label-content--hoshi,
+.loginskin .input--filled .input__label-content--hoshi {
+	-webkit-animation: anim-1 0.3s forwards;
+	animation: anim-1 0.3s forwards;
+}
+
+@-webkit-keyframes anim-1 {
+	50% {
+		opacity: 0;
+		-webkit-transform: translate3d(1em, 0, 0);
+		transform: translate3d(1em, 0, 0);
+	}
+	51% {
+		opacity: 0;
+		-webkit-transform: translate3d(-1em, -40%, 0);
+		transform: translate3d(-1em, -40%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, -40%, 0);
+		transform: translate3d(0, -40%, 0);
+	}
+}
+
+@keyframes anim-1 {
+	50% {
+		opacity: 0;
+		-webkit-transform: translate3d(1em, 0, 0);
+		transform: translate3d(1em, 0, 0);
+	}
+	51% {
+		opacity: 0;
+		-webkit-transform: translate3d(-1em, -40%, 0);
+		transform: translate3d(-1em, -40%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, -40%, 0);
+		transform: translate3d(0, -40%, 0);
+	}
+}
+
+.loginskin .codes{
+	 margin: 50px 250px 0px 150px;
+	 text-align:left;
+	 color:#FFFFFF;
+	 font-size:30px;
+	 width:400px;
+}
+
+.loginskin .codes .codeTitle{
+	 float:left;
+	 width:200px;
+	 border-bottom:#fff 1px solid;
+	 margin-right: 10px;
+}
+
+
+.loginskin .codes .codeTitle .inputSkin{
+	 margin: 0px 0px 0px 5px;
+	 color:#0033CC;
+	 font-weight:bold;
+	 width: 50px;
+	 font-size:15px;
+	 border:rgba(0, 102, 205, 0);
+	 background:rgba(0, 102, 205, 0);
+}
+
+.loginskin .codes .code {
+	 float:left;
+	 font-family:  sans serif;
+	 font-variant: small-caps;
+	 color:#FFFFFF;
+	 font-size:25px;
+	 border:none;
+	 font-weight:bold;
+	 cursor:pointer;
+	 width:100px;
+	 height:50px;
+	 line-height:50px;
+	 background:#6666FF;
+	 vertical-align:middle;
+	 text-align:center;
+	 -moz-user-select: none;
+	 -webkit-user-select: none;
+	 -ms-user-select: none;
+	 -khtml-user-select: none;
+	 user-select: none;
+}
+
+.loginskin .buttonSkin{
+	 text-align:center;
+	 color:#636363;
+	 font-size:30px;
+	 background:#EEC900;
+	 margin: 50px auto 0px auto;
+	 border: #636363 1px solid;
+	 height:56px;
+	 width: 385px;
+	 cursor:pointer;
+	 transition: opacity 2s;
+	 opacity: 0.4;
+}
+
+.loginskin .buttonSkin:hover {
+	opacity: 1;
+	transition-duration: 0s;
+}
+
+.loginskin .remark{
+	 text-align:center;
+	 color:#FFFFFF;
+	 font-size:17px;
+	 margin: 0px auto;
+}
+
+.loginskin .bottom{
+	 text-align:center;
+	 color:#FFFFFF;
+	 font-size:25px;
+	 margin: 100px auto;
+}
