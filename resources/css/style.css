@@ -64,6 +64,32 @@ body, h1, div, input {
 	outline: none;
 }
 
+.loginskin .codes .codeTitle{
+	 float:left;
+	 width:200px;
+	 color:#FFFFFF;
+	 font-size:30px;
+	 border-bottom:#fff 1px solid;
+	 margin-right: 10px;
+}
+
+.loginskin .codes .codeTitle .inputSkin{
+	 margin: 0px 0px 0px 5px;
+	 text-align: left;
+	 border:rgba(0, 102, 205, 0);
+	 background:rgba(0, 102, 205, 0);
+	 border-radius: 0;
+	 color: #aaa;
+	 width: 100px;
+	 font-weight:bold;
+	 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  -webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.loginskin .codes .codeTitle .inputSkin:focus {
+	outline: none;
+}
+
 /* Hoshi */
 .loginskin .input {
 	position: relative;
@@ -223,24 +249,6 @@ body, h1, div, input {
 	 color:#FFFFFF;
 	 font-size:30px;
 	 width:400px;
-}
-
-.loginskin .codes .codeTitle{
-	 float:left;
-	 width:200px;
-	 border-bottom:#fff 1px solid;
-	 margin-right: 10px;
-}
-
-
-.loginskin .codes .codeTitle .inputSkin{
-	 margin: 0px 0px 0px 5px;
-	 color:#0033CC;
-	 font-weight:bold;
-	 width: 50px;
-	 font-size:15px;
-	 border:rgba(0, 102, 205, 0);
-	 background:rgba(0, 102, 205, 0);
 }
 
 .loginskin .codes .code {

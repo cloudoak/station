@@ -1,7 +1,6 @@
-# Config
+# MySQL Python DB Pool Config
 [client]
-#database = jdbc:mysql://192.168.108.145:3306/cctv
-name = cctv
+database = cctv
 host = 192.168.108.145
 port = 3306
 user = iov
